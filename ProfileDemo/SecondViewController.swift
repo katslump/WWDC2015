@@ -11,6 +11,10 @@ import UIKit
 class SecondViewController: UIViewController {
 
     @IBOutlet var iconHolder: UIImageView!
+  
+    
+    var scrollView: UIScrollView!
+    var timeline:   TimelineView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,22 +31,47 @@ class SecondViewController: UIViewController {
         self.iconHolder.layer.borderColor = newColor
         self.iconHolder.layer.cornerRadius = 10.0
 
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        // Do any additional setup after loading the view, typically from a nib.
+        scrollView = UIScrollView(frame: view.bounds)
+        scrollView.setTranslatesAutoresizingMaskIntoConstraints(false)
+        view.addSubview(scrollView)
+        
+        view.addConstraints([
+            NSLayoutConstraint(item: scrollView, attribute: .Left, relatedBy: .Equal, toItem: view, attribute: .Left, multiplier: 1.0, constant: 0),
+            NSLayoutConstraint(item: scrollView, attribute: .Top, relatedBy: .Equal, toItem: view, attribute: .Top, multiplier: 1.0, constant: 29),
+            NSLayoutConstraint(item: scrollView, attribute: .Right, relatedBy: .Equal, toItem: view, attribute: .Right, multiplier: 1.0, constant: 0),
+            NSLayoutConstraint(item: scrollView, attribute: .Bottom, relatedBy: .Equal, toItem: view, attribute: .Bottom, multiplier: 1.0, constant: 0)
+            ])
+        
+       	
+        timeline = TimelineView(bulletType: .Circle, timeFrames: [
+            TimeFrame(text: "Software Development Intern", date: "Flywheel (Summer 2015)", image: UIImage(named: "flywheel.png")),
+            TimeFrame(text: "College Code Camp Selectee",date: "Square (January 2015)", image: UIImage(named: "square.png")),
+            TimeFrame(text: "Social Engagement Strategist", date: "Interface Web School (August 2014 - present)", image: UIImage(named: "interface.png")),
+           
+            
+            ])
+        scrollView.addSubview(timeline)
+        scrollView.addConstraints([
+            NSLayoutConstraint(item: timeline, attribute: .Left, relatedBy: .Equal, toItem: scrollView, attribute: .Left, multiplier: 1.0, constant: 0),
+            NSLayoutConstraint(item: timeline, attribute: .Bottom, relatedBy: .LessThanOrEqual, toItem: scrollView, attribute: .Bottom, multiplier: 1.0, constant: 0),
+            NSLayoutConstraint(item: timeline, attribute: .Top, relatedBy: .Equal, toItem: scrollView, attribute: .Top, multiplier: 1.0, constant: 0),
+            NSLayoutConstraint(item: timeline, attribute: .Right, relatedBy: .Equal, toItem: scrollView, attribute: .Right, multiplier: 1.0, constant: 0),
+            
+            NSLayoutConstraint(item: timeline, attribute: .Width, relatedBy: .Equal, toItem: scrollView, attribute: .Width, multiplier: 1.0, constant: 0)
+            ])
+        
+        view.sendSubviewToBack(scrollView)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func bulletChanged(sender: UISegmentedControl) {
+        timeline.bulletType = [BulletType.Circle, BulletType.Hexagon, BulletType.Diamond, BulletType.DiamondSlash, BulletType.Carrot, BulletType.Arrow][sender.selectedSegmentIndex]
     }
-    */
-
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+    
+    
 }
+
