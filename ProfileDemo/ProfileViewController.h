@@ -10,5 +10,6 @@
 
 @interface ProfileViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
+@property (strong, nonatomic) IBOutlet UIImageView *WWDCimage;
 
 @end

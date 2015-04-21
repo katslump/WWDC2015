@@ -25,6 +25,8 @@ public struct TimeFrame{
 		An optional image to show with the text and the date in the timeline.
 	*/
 	let image: UIImage?
+    
+
 }
 
 /**
@@ -328,6 +330,7 @@ public class TimelineView: UIView {
 	}
 	
 	func tapImage(button: UIButton){
+
 		var imageView: UIImageView? = nil
 		for v in subviews{
 			for w in v.subviews{
@@ -336,7 +339,7 @@ public class TimelineView: UIView {
 				}
 			}
 		}
-	/*	if let i = imageView{
+		/*if let i = imageView{
 			let imageInfo = JTSImageInfo()
 			imageInfo.image = i.image
 			imageInfo.referenceRect = convertRect(i.frame, fromView: i.superview)
@@ -345,6 +348,7 @@ public class TimelineView: UIView {
 			imageViewer!.showFromViewController(UIApplication.sharedApplication().keyWindow?.rootViewController, transition: JTSImageViewControllerTransition._FromOriginalPosition)
 		}
 */
+
 	}
 }
 

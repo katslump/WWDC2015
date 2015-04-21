@@ -15,12 +15,8 @@ class OpenViewController: UIViewController {
     let delay = 1.0
     let options = UIViewKeyframeAnimationOptions.CalculationModeLinear
    
+    @IBOutlet var welcomeLabel: UILabel!
 
-    @IBAction func handlePinch(sender: AnyObject) {
-        
-       
-        performSegueWithIdentifier("mySegueID", sender: nil)
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,6 +34,7 @@ class OpenViewController: UIViewController {
                 // duration 1.67s (5s × 1/3)
                 // end at   1.67s (0.00s + 1.67s)
                 self.WWDCimage.transform = CGAffineTransformMakeRotation(1/3 * fullRotation)
+                 self.welcomeLabel.alpha=1;
             })
             UIView.addKeyframeWithRelativeStartTime(1/3, relativeDuration: 1/3, animations: {
                 self.WWDCimage.transform = CGAffineTransformMakeRotation(2/3 * fullRotation)
@@ -49,6 +46,8 @@ class OpenViewController: UIViewController {
             }, completion: {finished in
                 // any code entered here will be applied
                 // once the animation has completed
+               
+                
                 self.performSegueWithIdentifier("moveOn", sender: nil)
                 
         })

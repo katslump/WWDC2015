@@ -31,6 +31,9 @@ class MenuViewController: UIViewController {
         self.view.addSubview(menuPic)
         
     }
+    @IBAction func unwindFromViewController(segue:UIStoryboardSegue) {
+    
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

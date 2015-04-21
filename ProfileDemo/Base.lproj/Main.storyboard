@@ -40,6 +40,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <gestureRecognizers/>
                             </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7P-zD-h6J">
+                                <rect key="frame" x="79" y="498" width="163" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -50,6 +56,7 @@
                     <navigationItem key="navigationItem" id="uQg-hJ-yrQ"/>
                     <connections>
                         <outlet property="WWDCimage" destination="2BO-Vg-sVa" id="t7H-mO-BLe"/>
+                        <outlet property="welcomeLabel" destination="D7P-zD-h6J" id="oYg-E3-AJr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d1N-ws-ATR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -77,7 +84,7 @@
                                 <rect key="frame" x="0.0" y="-5" width="320" height="222"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="swipe to menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqy-fd-uHw">
-                                <rect key="frame" x="48" y="515" width="187" height="24"/>
+                                <rect key="frame" x="30" y="515" width="186" height="24"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="23"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -179,7 +186,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="next15.png" translatesAutoresizingMaskIntoConstraints="NO" id="An6-1j-MhM">
-                                <rect key="frame" x="206" y="515" width="53" height="27"/>
+                                <rect key="frame" x="188" y="515" width="53" height="27"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wwdc_2015_roundup.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="pPd-0p-Urn">
+                                <rect key="frame" x="241" y="507" width="40" height="40"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -193,6 +203,7 @@
                     </navigationItem>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="WWDCimage" destination="pPd-0p-Urn" id="kXF-Qh-VVk"/>
                         <outlet property="profileImageView" destination="4bn-QV-wiY" id="ZHh-eW-Rc2"/>
                     </connections>
                 </viewController>
@@ -233,7 +244,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="TMR-k3-NQa" kind="push" id="aTi-YI-b75"/>
+                                    <segue destination="ayK-j1-IeA" kind="unwind" unwindAction="unwindFromViewController:" id="cQt-T1-FHx"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Random Facts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajh-9I-YLl">
@@ -254,6 +265,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iTw-Ii-wkg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ayK-j1-IeA" userLabel="Exit" sceneMemberID="exit"/>
                 <swipeGestureRecognizer direction="right" id="Zgg-7R-nd6">
                     <connections>
                         <segue destination="TMR-k3-NQa" kind="push" id="zd9-ru-DL8"/>
@@ -303,7 +315,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="TMR-k3-NQa" kind="push" id="Scc-px-JFF"/>
+                                    <segue destination="Qob-ce-Nsr" kind="unwind" unwindAction="unwindFromViewController:" id="dfD-JK-XiF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -321,6 +333,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="edL-hR-dlO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Qob-ce-Nsr" userLabel="Exit" sceneMemberID="exit"/>
                 <swipeGestureRecognizer direction="right" id="JxG-bE-HhK">
                     <connections>
                         <segue destination="TMR-k3-NQa" kind="push" id="Dqz-EI-Jt7"/>
@@ -357,7 +370,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="TMR-k3-NQa" kind="push" id="PF5-Jk-FbL"/>
+                                    <segue destination="jrc-Yh-Gn6" kind="unwind" unwindAction="unwindFromViewController:" id="ozY-eX-Xz5"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Honors" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jmi-EF-CF3">
@@ -376,13 +389,14 @@
                     <navigationItem key="navigationItem" id="VQz-2t-36v"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ndU-my-fmJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="jrc-Yh-Gn6" userLabel="Exit" sceneMemberID="exit"/>
                 <swipeGestureRecognizer direction="right" id="PFY-BD-NlI">
                     <connections>
                         <segue destination="TMR-k3-NQa" kind="push" id="K9g-hS-Rbt"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1701" y="1352"/>
+            <point key="canvasLocation" x="1601" y="1615"/>
         </scene>
         <!--Menu-->
         <scene sceneID="N3G-H2-NGR">
@@ -509,12 +523,12 @@
                                 <rect key="frame" x="12" y="36" width="29" height="26"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOL-oN-zIh">
-                                <rect key="frame" x="34" y="0.0" width="67" height="79"/>
+                                <rect key="frame" x="0.0" y="0.0" width="90" height="79"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="push" id="0cq-e4-RN3"/>
+                                    <segue destination="vLe-MV-164" kind="unwind" unwindAction="unwindFromViewController:" id="o9O-k2-kF1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -528,8 +542,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="weR-Wp-kse" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="vLe-MV-164" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1790" y="685"/>
+            <point key="canvasLocation" x="1815" y="947"/>
         </scene>
         <!--Experience-->
         <scene sceneID="g68-Dg-TN2">
@@ -565,7 +580,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="TMR-k3-NQa" kind="push" id="P7F-Gt-C9i"/>
+                                    <segue destination="2kQ-zE-lfa" kind="unwind" unwindAction="unwindFromViewController:" id="EsV-le-2Jb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -587,6 +602,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jdC-ea-K9B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="2kQ-zE-lfa" userLabel="Exit" sceneMemberID="exit"/>
                 <swipeGestureRecognizer direction="right" id="Sgn-jN-RZD">
                     <connections>
                         <segue destination="TMR-k3-NQa" kind="push" id="4KW-x2-nCt"/>
@@ -628,7 +644,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="TMR-k3-NQa" kind="push" id="VcT-nn-Wpk"/>
+                                    <segue destination="csD-yW-5Td" kind="unwind" unwindAction="unwindFromViewController:" id="1zI-3E-O1y"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Leadership" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4X5-WL-bc0">
@@ -655,6 +671,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2qP-7A-UrC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="csD-yW-5Td" userLabel="Exit" sceneMemberID="exit"/>
                 <swipeGestureRecognizer direction="right" id="PoP-hV-W4g">
                     <connections>
                         <outlet property="delegate" destination="eRW-ZW-xrs" id="hu3-Fm-Ndg"/>
@@ -662,7 +679,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1873" y="1307"/>
+            <point key="canvasLocation" x="1901" y="1536"/>
         </scene>
         <!--Projects-->
         <scene sceneID="vEj-GF-ABC">
@@ -691,7 +708,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="TMR-k3-NQa" kind="push" id="yoP-X3-SMw"/>
+                                    <segue destination="KQ3-Z3-tEa" kind="unwind" unwindAction="unwindFromViewController:" id="YVc-9j-QrI"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Projects" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wt-Qf-dHP">
@@ -718,6 +735,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PGC-G5-haR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="KQ3-Z3-tEa" userLabel="Exit" sceneMemberID="exit"/>
                 <swipeGestureRecognizer direction="right" id="avD-o0-RMz">
                     <connections>
                         <segue destination="TMR-k3-NQa" kind="push" id="wTA-6H-ozz"/>
@@ -752,7 +770,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="0cq-e4-RN3"/>
-        <segue reference="zd9-ru-DL8"/>
+        <segue reference="MvO-SZ-Rjn"/>
     </inferredMetricsTieBreakers>
 </document>
