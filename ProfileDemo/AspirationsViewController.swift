@@ -9,6 +9,8 @@
 import UIKit
 
 class AspirationsViewController: UIViewController {
+    
+    @IBOutlet var heartIcon: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
