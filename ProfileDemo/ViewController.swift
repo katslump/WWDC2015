@@ -19,11 +19,12 @@ class ViewController: UIViewController {
 		scrollView = UIScrollView(frame: view.bounds)
 		scrollView.setTranslatesAutoresizingMaskIntoConstraints(false)
 		view.addSubview(scrollView)
+         self.scrollView.showsVerticalScrollIndicator = false
 		
 		view.addConstraints([
 			NSLayoutConstraint(item: scrollView, attribute: .Left, relatedBy: .Equal, toItem: view, attribute: .Left, multiplier: 1.0, constant: 0),
 			NSLayoutConstraint(item: scrollView, attribute: .Top, relatedBy: .Equal, toItem: view, attribute: .Top, multiplier: 1.0, constant: 29),
-			NSLayoutConstraint(item: scrollView, attribute: .Right, relatedBy: .Equal, toItem: view, attribute: .Right, multiplier: 1.0, constant: 0),
+			NSLayoutConstraint(item: scrollView, attribute: .Right, relatedBy: .Equal, toItem: view, attribute: .Right, multiplier: 1.0, constant: -15),
 			NSLayoutConstraint(item: scrollView, attribute: .Bottom, relatedBy: .Equal, toItem: view, attribute: .Bottom, multiplier: 1.0, constant: 0)
 			])
 		

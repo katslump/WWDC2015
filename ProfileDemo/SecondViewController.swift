@@ -15,6 +15,7 @@ class SecondViewController: UIViewController {
     
     var scrollView: UIScrollView!
     var timeline:   TimelineView!
+    let screenSize:CGRect = UIScreen.mainScreen().bounds
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,12 +35,14 @@ class SecondViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         scrollView = UIScrollView(frame: view.bounds)
         scrollView.setTranslatesAutoresizingMaskIntoConstraints(false)
+        view.frame.size.width = screenSize.width * 0.30
         view.addSubview(scrollView)
+         self.scrollView.showsVerticalScrollIndicator = false
         
         view.addConstraints([
             NSLayoutConstraint(item: scrollView, attribute: .Left, relatedBy: .Equal, toItem: view, attribute: .Left, multiplier: 1.0, constant: 0),
             NSLayoutConstraint(item: scrollView, attribute: .Top, relatedBy: .Equal, toItem: view, attribute: .Top, multiplier: 1.0, constant: 29),
-            NSLayoutConstraint(item: scrollView, attribute: .Right, relatedBy: .Equal, toItem: view, attribute: .Right, multiplier: 1.0, constant: 0),
+            NSLayoutConstraint(item: scrollView, attribute: .Right, relatedBy: .Equal, toItem: view, attribute: .Right, multiplier: 1.0, constant: -15),
             NSLayoutConstraint(item: scrollView, attribute: .Bottom, relatedBy: .Equal, toItem: view, attribute: .Bottom, multiplier: 1.0, constant: 0)
             ])
         
