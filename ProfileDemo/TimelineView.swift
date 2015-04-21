@@ -26,6 +26,7 @@ public struct TimeFrame{
 	*/
 	let image: UIImage?
     
+    
 
 }
 

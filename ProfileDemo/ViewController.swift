@@ -10,12 +10,27 @@ import UIKit
 
 class ViewController: UIViewController {
 	
+    @IBOutlet var crownImage: UIImageView!
 	var scrollView: UIScrollView!
     var timeline:   TimelineView!
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
+        
+        self.crownImage.layer.cornerRadius = self.crownImage.frame.size.width / 2
+        self.crownImage.clipsToBounds = true
+        
+        var newColor = UIColor.whiteColor().CGColor
+        
+        self.crownImage.layer.borderWidth = 3.0
+        self.crownImage.layer.borderColor = newColor
+        
+        self.crownImage.layer.cornerRadius = 10.0
+        // Do any additional setup after loading the view.
+        
+        self.view.addSubview(crownImage)
+
 		scrollView = UIScrollView(frame: view.bounds)
 		scrollView.setTranslatesAutoresizingMaskIntoConstraints(false)
 		view.addSubview(scrollView)
