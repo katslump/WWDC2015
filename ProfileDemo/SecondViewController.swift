@@ -71,9 +71,7 @@ class SecondViewController: UIViewController {
         timeline.bulletType = [BulletType.Circle, BulletType.Hexagon, BulletType.Diamond, BulletType.DiamondSlash, BulletType.Carrot, BulletType.Arrow][sender.selectedSegmentIndex]
     }
     
-    override func prefersStatusBarHidden() -> Bool {
-        return true
-    }
+   
     
     
 }

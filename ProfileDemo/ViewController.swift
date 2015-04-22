@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 	
     @IBOutlet var crownImage: UIImageView!
+    
 	var scrollView: UIScrollView!
     var timeline:   TimelineView!
 	
@@ -35,19 +36,20 @@ class ViewController: UIViewController {
 		scrollView.setTranslatesAutoresizingMaskIntoConstraints(false)
 		view.addSubview(scrollView)
          self.scrollView.showsVerticalScrollIndicator = false
+        self.scrollView.showsHorizontalScrollIndicator = false
 		
 		view.addConstraints([
 			NSLayoutConstraint(item: scrollView, attribute: .Left, relatedBy: .Equal, toItem: view, attribute: .Left, multiplier: 1.0, constant: 0),
 			NSLayoutConstraint(item: scrollView, attribute: .Top, relatedBy: .Equal, toItem: view, attribute: .Top, multiplier: 1.0, constant: 29),
 			NSLayoutConstraint(item: scrollView, attribute: .Right, relatedBy: .Equal, toItem: view, attribute: .Right, multiplier: 1.0, constant: -15),
-			NSLayoutConstraint(item: scrollView, attribute: .Bottom, relatedBy: .Equal, toItem: view, attribute: .Bottom, multiplier: 1.0, constant: 0)
+			NSLayoutConstraint(item: scrollView, attribute: .Bottom, relatedBy: .Equal, toItem: view, attribute: .Bottom, multiplier: 1.0, constant: -20)
 			])
 		
-		timeline = TimelineView(bulletType: .Circle, timeFrames: [
-            TimeFrame(text: "?", date: "NCWIT Award of Aspirations in Computing Award", image: UIImage(named: "NCWITlogo_square.jpg")),
-			TimeFrame(text: "?",date: "Square College Code Camp Selectee 2015", image: UIImage(named: "square.png")),
-			TimeFrame(text: "3rd place", date: "Startup Weekend", image: UIImage(named: "SW.png")),
-			TimeFrame(text: "1st place", date: "IT Innovation Cup", image: UIImage(named: "ITCup.jpg")),
+		timeline = TimelineView(bulletType: .Carrot, timeFrames: [
+            TimeFrame(text: "The NCWIT Award for Aspirations in Computing honors young women at the high-school level for their computing-related achievements and interests. Awardees are selected for their computing and IT aptitude, leadership ability, academic history, and plans for post-secondary education. ", date: "NCWIT Award of Aspirations in Computing Award", image: UIImage(named: "NCWIT.png")),
+            TimeFrame(text: "Was 1 of 20 selected to attend Square's College Code Camp in January 2015. There were hundreds of applicants across North America. I was the first woman to be selected to attend from Nebraska. \n\nThose selected win a trip to Square's San Francisco headquarters to participate in a five-day immersion program, where they attend coding workshops, leadership sessions, and tour San Francisco—all while surrounded by top women engineers from across the U.S. and Canada.",date: "Square College Code Camp Selectee 2015", image: UIImage(named: "jack.png")),
+            TimeFrame(text: "3rd place\nI was on the team of ~Haus~ while at Startup Weekend Nebraska where we placed 3rd in the competition. I served as both a designer and front-end developer.", date: "Startup Weekend", image: UIImage(named: "SW.png")),
+			TimeFrame(text: "1st place\nOur team at V.J. & Angela Skutt Catholic High School won the IT Innovation Cup, a competition for high school students that focuses on creativity, innovation and technology. Participants in the 2012- 2013 competition were to create a mobile application that would teach its user something. The team collaborated and created The Calorie Gallery.", date: "IT Innovation Cup", image: UIImage(named: "ITCup.jpg")),
 						])
 		scrollView.addSubview(timeline)
 		scrollView.addConstraints([
@@ -66,9 +68,6 @@ class ViewController: UIViewController {
         timeline.bulletType = [BulletType.Circle, BulletType.Hexagon, BulletType.Diamond, BulletType.DiamondSlash, BulletType.Carrot, BulletType.Arrow][sender.selectedSegmentIndex]
     }
 
-	override func prefersStatusBarHidden() -> Bool {
-		return true
-	}
 	
 	
 }

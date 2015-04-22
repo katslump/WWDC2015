@@ -27,9 +27,9 @@ class ThirdViewController: UIViewController {
         var newColor = UIColor.whiteColor().CGColor
         
         
-        self.mapIcon.layer.borderWidth = 3.0
+        self.mapIcon.layer.borderWidth = 3
         self.mapIcon.layer.borderColor = newColor
-        self.mapIcon.layer.cornerRadius = 10.0
+        self.mapIcon.layer.cornerRadius = 10
         
         // Do any additional setup after loading the view, typically from a nib.
         scrollView = UIScrollView(frame: view.bounds)
@@ -40,7 +40,7 @@ class ThirdViewController: UIViewController {
         
         view.addConstraints([
             NSLayoutConstraint(item: scrollView, attribute: .Left, relatedBy: .Equal, toItem: view, attribute: .Left, multiplier: 1.0, constant: 0),
-            NSLayoutConstraint(item: scrollView, attribute: .Top, relatedBy: .Equal, toItem: view, attribute: .Top, multiplier: 1.0, constant: 29),
+            NSLayoutConstraint(item: scrollView, attribute: .Top, relatedBy: .Equal, toItem: view, attribute: .Top, multiplier: 1.0, constant: 35),
             NSLayoutConstraint(item: scrollView, attribute: .Right, relatedBy: .Equal, toItem: view, attribute: .Right, multiplier: 1.0, constant: -15),
             NSLayoutConstraint(item: scrollView, attribute: .Bottom, relatedBy: .Equal, toItem: view, attribute: .Bottom, multiplier: 1.0, constant: 0)
             ])
@@ -48,8 +48,9 @@ class ThirdViewController: UIViewController {
        	
         timeline = TimelineView(bulletType: .Diamond, timeFrames: [
             TimeFrame(text: "Awardees have had contribution toward addressing improving the status of women or gender issues at UNO in their academic work or activities, and/or have academic excellence in fields where women are underrepresented.", date: "Chancellor's Commission on the Status of Women Scholarship", image: nil),
-            TimeFrame(text: "Responsible for club outreach, marketing materials, and design. Helped recruitment go from 16 to 64 by the end of the semester via reaching out to the College of IS&T and friends. Awarded Marketing Club of the Year at CEO Nationals in Orlando, FL (Fall 2014).",date: "Chief Marketing Officer of UNO's Collegiate Entrepreneurial Organization", image: UIImage(named: "square.png")),
-            TimeFrame(text: "Helps the College of IS&T in any way possible on its women in tech initiative. Has gone to middle schools and high schools to recruit students, talked on tech panels, and become a Women in IT Engagement Link member (youngest member).", date: "Women in Tech Ambassador", image: nil),
+            TimeFrame(text: "Responsible for club outreach, marketing materials, and design. Helped recruitment go from 16 to 64 by the end of the semester via reaching out to the College of IS&T and friends. Awarded Marketing Club of the Year at CEO Nationals in Orlando, FL (Fall 2014).",date: "Chief Marketing Officer of UNO's Collegiate Entrepreneurial Organization", image: UIImage(named: "chance.png")),
+            TimeFrame(text: "Helps the College of IS&T in any way possible on its women in tech initiative. Has gone to middle schools and high schools to recruit students, talked on tech panels, and become a Women in IT Engagement Link member (youngest member).", date: "Women in Tech Ambassador", image: UIImage(named: "CMO.png")),
+             TimeFrame(text: " ", date: " ", image: UIImage(named: "WomenTech.png")),
         
             
             ])
@@ -70,9 +71,7 @@ class ThirdViewController: UIViewController {
         timeline.bulletType = [BulletType.Circle, BulletType.Hexagon, BulletType.Diamond, BulletType.DiamondSlash, BulletType.Carrot, BulletType.Arrow][sender.selectedSegmentIndex]
     }
     
-    override func prefersStatusBarHidden() -> Bool {
-        return true
-    }
+
     
     
 }
