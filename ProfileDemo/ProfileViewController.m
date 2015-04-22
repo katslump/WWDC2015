@@ -37,6 +37,15 @@
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://github.com/katslump"]];
     
 }
+
+
+
+-(IBAction)unwindToMainViewController: (UIStoryboardSegue *)segue{
+    // bug? exit segue doesn't dismiss so we do it manually...
+  
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -62,6 +71,9 @@
 
     
 }
+
+
+
 - (void)spinLayer:(CALayer *)inLayer duration:(CFTimeInterval)inDuration
         direction:(int)direction delay:(int)delay
 {

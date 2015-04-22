@@ -41,6 +41,11 @@
 		ACC1A8C81AE7CDB0003B90BF /* gift.png in Resources */ = {isa = PBXBuildFile; fileRef = ACC1A8C31AE7CDB0003B90BF /* gift.png */; };
 		ACC1A8C91AE7CDB0003B90BF /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = ACC1A8C41AE7CDB0003B90BF /* heart.png */; };
 		ACC1A8CA1AE7CDB0003B90BF /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = ACC1A8C51AE7CDB0003B90BF /* map.png */; };
+		ACC1A8CF1AE81FA0003B90BF /* crown.png in Resources */ = {isa = PBXBuildFile; fileRef = ACC1A8CB1AE81F9F003B90BF /* crown.png */; };
+		ACC1A8D01AE81FA0003B90BF /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = ACC1A8CC1AE81FA0003B90BF /* heart.png */; };
+		ACC1A8D11AE81FA0003B90BF /* gift.png in Resources */ = {isa = PBXBuildFile; fileRef = ACC1A8CD1AE81FA0003B90BF /* gift.png */; };
+		ACC1A8D21AE81FA0003B90BF /* mug.png in Resources */ = {isa = PBXBuildFile; fileRef = ACC1A8CE1AE81FA0003B90BF /* mug.png */; };
+		ACC1A8D41AE822CF003B90BF /* WCDC.png in Resources */ = {isa = PBXBuildFile; fileRef = ACC1A8D31AE822CF003B90BF /* WCDC.png */; };
 		ACE9B6811AE70CDE0051C1CD /* square1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACE9B6801AE70CDE0051C1CD /* square1.jpg */; };
 		ACE9B6851AE715250051C1CD /* ditrans.png in Resources */ = {isa = PBXBuildFile; fileRef = ACE9B6821AE715250051C1CD /* ditrans.png */; };
 		ACE9B6861AE715250051C1CD /* globetrans.png in Resources */ = {isa = PBXBuildFile; fileRef = ACE9B6831AE715250051C1CD /* globetrans.png */; };
@@ -119,6 +124,11 @@
 		ACC1A8C31AE7CDB0003B90BF /* gift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gift.png; sourceTree = "<group>"; };
 		ACC1A8C41AE7CDB0003B90BF /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
 		ACC1A8C51AE7CDB0003B90BF /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		ACC1A8CB1AE81F9F003B90BF /* crown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crown.png; sourceTree = "<group>"; };
+		ACC1A8CC1AE81FA0003B90BF /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+		ACC1A8CD1AE81FA0003B90BF /* gift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gift.png; sourceTree = "<group>"; };
+		ACC1A8CE1AE81FA0003B90BF /* mug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mug.png; sourceTree = "<group>"; };
+		ACC1A8D31AE822CF003B90BF /* WCDC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WCDC.png; sourceTree = "<group>"; };
 		ACE9B6801AE70CDE0051C1CD /* square1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = square1.jpg; sourceTree = "<group>"; };
 		ACE9B6821AE715250051C1CD /* ditrans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ditrans.png; sourceTree = "<group>"; };
 		ACE9B6831AE715250051C1CD /* globetrans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = globetrans.png; sourceTree = "<group>"; };
@@ -282,10 +292,15 @@
 				ACC1A8C21AE7CDB0003B90BF /* crown.png */,
 				ACC1A8C31AE7CDB0003B90BF /* gift.png */,
 				ACC1A8C41AE7CDB0003B90BF /* heart.png */,
+				ACC1A8CB1AE81F9F003B90BF /* crown.png */,
+				ACC1A8CC1AE81FA0003B90BF /* heart.png */,
+				ACC1A8CD1AE81FA0003B90BF /* gift.png */,
+				ACC1A8CE1AE81FA0003B90BF /* mug.png */,
 				ACC1A8C51AE7CDB0003B90BF /* map.png */,
 				ACC1A8BF1AE7CD9C003B90BF /* ruby.png */,
 				AC816B171AE5A53A00224169 /* interface.png */,
 				AC816B1F1AE5F99D00224169 /* CalorieGallery.png */,
+				ACC1A8D31AE822CF003B90BF /* WCDC.png */,
 				AC816B201AE5F99D00224169 /* PopDodge.png */,
 				AC816B181AE5A53A00224169 /* flywheel.png */,
 				AC2954961AE2E0F700BE2A66 /* twitter-icon.png */,
@@ -389,8 +404,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACC1A8CF1AE81FA0003B90BF /* crown.png in Resources */,
 				ACE9B68D1AE719FD0051C1CD /* WomenTech.png in Resources */,
 				AC816B211AE5F99D00224169 /* CalorieGallery.png in Resources */,
+				ACC1A8D21AE81FA0003B90BF /* mug.png in Resources */,
 				AC816B371AE6BED900224169 /* backArrowWhite2.png in Resources */,
 				ACC1A8CA1AE7CDB0003B90BF /* map.png in Resources */,
 				ACC1A8C91AE7CDB0003B90BF /* heart.png in Resources */,
@@ -408,10 +425,12 @@
 				ACF9784F1AE48C16008769F9 /* 1800227_10205715912039980_7327075649600560856_n (1).jpg in Resources */,
 				AC2954971AE2E0F700BE2A66 /* twitter-icon.png in Resources */,
 				ACF9784B1AE487FC008769F9 /* text.jpg in Resources */,
+				ACC1A8D11AE81FA0003B90BF /* gift.png in Resources */,
 				AC816B2A1AE5FA5700224169 /* BD2.jpg in Resources */,
 				AC29549C1AE2E10700BE2A66 /* instagram.png in Resources */,
 				ACF978511AE4B1DE008769F9 /* wwdc_2015_roundup.jpg in Resources */,
 				AC816B2C1AE5FD0900224169 /* SW.png in Resources */,
+				ACC1A8D01AE81FA0003B90BF /* heart.png in Resources */,
 				ACE9B6951AE7237B0051C1CD /* gitIcon.png in Resources */,
 				ACE9B6871AE715250051C1CD /* mugtrans.png in Resources */,
 				AC816B191AE5A53A00224169 /* NCWITlogo_square.jpg in Resources */,
@@ -428,6 +447,7 @@
 				AC816B2E1AE5FD5C00224169 /* ITCup.jpg in Resources */,
 				AC29549B1AE2E10700BE2A66 /* facebok-icon.png in Resources */,
 				AC2954821AE2CCBE00BE2A66 /* background.jpg in Resources */,
+				ACC1A8D41AE822CF003B90BF /* WCDC.png in Resources */,
 				ACE9B6911AE71BA50051C1CD /* NCWIT.png in Resources */,
 				AC2954801AE2CC1D00BE2A66 /* KatSlumpPic.jpg in Resources */,
 				F49BBFAE18E7D982006E563B /* Main.storyboard in Resources */,

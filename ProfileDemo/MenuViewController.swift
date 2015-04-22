@@ -20,7 +20,7 @@ class MenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+       /*
         self.menuPic.layer.cornerRadius = self.menuPic.frame.size.width / 2
         self.menuPic.clipsToBounds = true
         
@@ -33,8 +33,10 @@ class MenuViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         self.view.addSubview(menuPic)
-        
+        */
     }
+    
+
     @IBAction func unwindFromViewController(segue:UIStoryboardSegue) {
     
     }
