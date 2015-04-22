@@ -32,6 +32,10 @@
 - (IBAction)linkedinButton:(id)sender {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.linkedin.com/pub/katherine-slump/79/327/459"]];
 }
+- (IBAction)gitHubButton:(id)sender {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://github.com/katslump"]];
+    
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];

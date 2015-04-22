@@ -10,6 +10,10 @@ import UIKit
 
 class MenuViewController: UIViewController {
 
+    @IBAction func websiteLink(sender: AnyObject) {
+         UIApplication.sharedApplication().openURL(NSURL(string: "http://www.katslump.com/")!)
+        
+    }
     @IBOutlet var menuPic: UIImageView!
 
 

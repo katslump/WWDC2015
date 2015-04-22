@@ -10,8 +10,18 @@ import UIKit
 
 class HonorsViewController: UIViewController {
 
+    @IBAction func resumeButton(sender: AnyObject) {
+    
+    UIApplication.sharedApplication().openURL(NSURL(string: "http://www.katslump.com/uploads/1/1/7/2/1172891/katslumpnewresumev3.pdf")!)
+    
+    }
     @IBOutlet var giftIcon: UIImageView!
     
+    @IBAction func githubLink(sender: AnyObject) {
+           UIApplication.sharedApplication().openURL(NSURL(string: "      https://github.com/katslump")!)
+  
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
