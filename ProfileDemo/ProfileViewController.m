@@ -7,15 +7,16 @@
 //
 
 #import "ProfileViewController.h"
-
+#import "ProfileDemo-Bridging-Header.h"
 
 
 @interface ProfileViewController ()
 
 @end
 
-
 @implementation ProfileViewController
+
+@synthesize WWDCimage;
 
 - (IBAction)twitterButton:(id)sender {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://twitter.com/katslump"]];
@@ -48,11 +49,46 @@
     
     self.profileImageView.layer.cornerRadius = 10.0f;
 
-
     
+    [self.view addSubview:WWDCimage];
+    
+    #define SPIN_CLOCK_WISE 1
+    #define SPIN_COUNTERCLOCK_WISE -1
+    
+
+    [self spinLayer:WWDCimage.layer duration:2 direction:SPIN_CLOCK_WISE delay:3];
+ 
+    
+
     
 }
+- (void)spinLayer:(CALayer *)inLayer duration:(CFTimeInterval)inDuration
+        direction:(int)direction delay:(int)delay
+{
+    CABasicAnimation* rotationAnimation;
+    
+    // Rotate about the z axis
+    rotationAnimation =
+    [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+    
+    // Rotate 360 degress, in direction specified
+    rotationAnimation.toValue = [NSNumber numberWithFloat: M_PI * 2.0 * direction];
+    
+    // Perform the rotation over this many seconds
+    rotationAnimation.duration = 2;
+    
+    
+    //Perform the rotation after 2 seconds
+[rotationAnimation setBeginTime:CACurrentMediaTime()+2.0];
 
+    
+    // Set the pacing of the animation
+    rotationAnimation.timingFunction =
+    [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    
+    // Add animation to the layer and make it so
+    [inLayer addAnimation:rotationAnimation forKey:@"rotationAnimation"];
+}
 
 - (void)didReceiveMemoryWarning
 {
