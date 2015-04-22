@@ -46,6 +46,7 @@
 		ACC1A8D11AE81FA0003B90BF /* gift.png in Resources */ = {isa = PBXBuildFile; fileRef = ACC1A8CD1AE81FA0003B90BF /* gift.png */; };
 		ACC1A8D21AE81FA0003B90BF /* mug.png in Resources */ = {isa = PBXBuildFile; fileRef = ACC1A8CE1AE81FA0003B90BF /* mug.png */; };
 		ACC1A8D41AE822CF003B90BF /* WCDC.png in Resources */ = {isa = PBXBuildFile; fileRef = ACC1A8D31AE822CF003B90BF /* WCDC.png */; };
+		ACC1A8D61AE828C8003B90BF /* grid.gif in Resources */ = {isa = PBXBuildFile; fileRef = ACC1A8D51AE828C8003B90BF /* grid.gif */; };
 		ACE9B6811AE70CDE0051C1CD /* square1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACE9B6801AE70CDE0051C1CD /* square1.jpg */; };
 		ACE9B6851AE715250051C1CD /* ditrans.png in Resources */ = {isa = PBXBuildFile; fileRef = ACE9B6821AE715250051C1CD /* ditrans.png */; };
 		ACE9B6861AE715250051C1CD /* globetrans.png in Resources */ = {isa = PBXBuildFile; fileRef = ACE9B6831AE715250051C1CD /* globetrans.png */; };
@@ -129,6 +130,7 @@
 		ACC1A8CD1AE81FA0003B90BF /* gift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gift.png; sourceTree = "<group>"; };
 		ACC1A8CE1AE81FA0003B90BF /* mug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mug.png; sourceTree = "<group>"; };
 		ACC1A8D31AE822CF003B90BF /* WCDC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WCDC.png; sourceTree = "<group>"; };
+		ACC1A8D51AE828C8003B90BF /* grid.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = grid.gif; sourceTree = "<group>"; };
 		ACE9B6801AE70CDE0051C1CD /* square1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = square1.jpg; sourceTree = "<group>"; };
 		ACE9B6821AE715250051C1CD /* ditrans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ditrans.png; sourceTree = "<group>"; };
 		ACE9B6831AE715250051C1CD /* globetrans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = globetrans.png; sourceTree = "<group>"; };
@@ -286,6 +288,7 @@
 				ACE9B6941AE7237B0051C1CD /* gitIcon.png */,
 				ACF978501AE4B1DE008769F9 /* wwdc_2015_roundup.jpg */,
 				AC2954811AE2CCBE00BE2A66 /* background.jpg */,
+				ACC1A8D51AE828C8003B90BF /* grid.gif */,
 				AC816B151AE5A53A00224169 /* NCWITlogo_square.jpg */,
 				AC816B161AE5A53A00224169 /* square.png */,
 				ACC1A8C11AE7CDB0003B90BF /* coffee.png */,
@@ -406,6 +409,7 @@
 			files = (
 				ACC1A8CF1AE81FA0003B90BF /* crown.png in Resources */,
 				ACE9B68D1AE719FD0051C1CD /* WomenTech.png in Resources */,
+				ACC1A8D61AE828C8003B90BF /* grid.gif in Resources */,
 				AC816B211AE5F99D00224169 /* CalorieGallery.png in Resources */,
 				ACC1A8D21AE81FA0003B90BF /* mug.png in Resources */,
 				AC816B371AE6BED900224169 /* backArrowWhite2.png in Resources */,

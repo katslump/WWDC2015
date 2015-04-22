@@ -65,7 +65,7 @@
     #define SPIN_COUNTERCLOCK_WISE -1
     
 
-    [self spinLayer:WWDCimage.layer duration:2 direction:SPIN_CLOCK_WISE delay:3];
+    [self spinLayer:WWDCimage.layer duration:2 direction:SPIN_CLOCK_WISE delay:1];
  
     
 
