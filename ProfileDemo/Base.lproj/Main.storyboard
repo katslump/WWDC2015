@@ -263,8 +263,8 @@
                                 <rect key="frame" x="110" y="16" width="100" height="100"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backArrowWhite2.png" translatesAutoresizingMaskIntoConstraints="NO" id="vuT-tM-b4w">
-                                <rect key="frame" x="12" y="36" width="29" height="26"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WCDC.png" translatesAutoresizingMaskIntoConstraints="NO" id="vuT-tM-b4w">
+                                <rect key="frame" x="32" y="32" width="30" height="30"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yV0-go-oSj">
                                 <rect key="frame" x="0.0" y="0.0" width="92" height="79"/>
@@ -385,6 +385,7 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="WWDCimage" destination="vuT-tM-b4w" id="9rp-IZ-8xH"/>
                         <outlet property="giftIcon" destination="Rzh-TT-qRE" id="w4H-zH-1Gc"/>
                     </connections>
                 </viewController>
@@ -418,8 +419,8 @@
                                 <rect key="frame" x="110" y="12" width="100" height="100"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backArrowWhite2.png" translatesAutoresizingMaskIntoConstraints="NO" id="afv-zo-5mg">
-                                <rect key="frame" x="12" y="36" width="29" height="26"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WCDC.png" translatesAutoresizingMaskIntoConstraints="NO" id="afv-zo-5mg">
+                                <rect key="frame" x="32" y="32" width="30" height="30"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="te3-x8-kYk">
                                 <rect key="frame" x="0.0" y="0.0" width="92" height="79"/>
@@ -453,6 +454,7 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="WWDCimage" destination="afv-zo-5mg" id="oIP-IT-c30"/>
                         <outlet property="heartIcon" destination="r94-R9-EKY" id="DM7-Eq-IXR"/>
                     </connections>
                 </viewController>
@@ -481,8 +483,8 @@
                             <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lmp-fR-kRB">
                                 <rect key="frame" x="0.0" y="-17" width="320" height="82"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backArrowWhite2.png" translatesAutoresizingMaskIntoConstraints="NO" id="aX4-QC-nVj">
-                                <rect key="frame" x="12" y="36" width="29" height="26"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WCDC.png" translatesAutoresizingMaskIntoConstraints="NO" id="aX4-QC-nVj">
+                                <rect key="frame" x="32" y="32" width="30" height="30"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9e3-CC-sxa">
                                 <rect key="frame" x="0.0" y="0.0" width="67" height="79"/>
@@ -518,6 +520,7 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="WWDCimage" destination="aX4-QC-nVj" id="lFh-x9-ei0"/>
                         <outlet property="crownImage" destination="Md1-Ay-Jfo" id="MXZ-t7-IJY"/>
                     </connections>
                 </viewController>
@@ -724,8 +727,8 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backArrowWhite2.png" translatesAutoresizingMaskIntoConstraints="NO" id="r78-oP-2Cq">
-                                <rect key="frame" x="12" y="36" width="29" height="26"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WCDC.png" translatesAutoresizingMaskIntoConstraints="NO" id="r78-oP-2Cq">
+                                <rect key="frame" x="32" y="32" width="30" height="30"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttD-Yy-glg">
                                 <rect key="frame" x="-7" y="2" width="98" height="79"/>
@@ -748,6 +751,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
+                        <outlet property="WWDCimage" destination="r78-oP-2Cq" id="Ve4-wP-qyf"/>
                         <outlet property="iconHolder" destination="ecq-RD-fxh" id="v6s-TX-vul"/>
                     </connections>
                 </viewController>
@@ -770,7 +774,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qP6-jL-89e">
-                                <rect key="frame" x="0.0" y="-4" width="320" height="109"/>
+                                <rect key="frame" x="0.0" y="-4" width="320" height="126"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NIc-Pz-BZ1">
@@ -795,8 +799,8 @@
                                     <segue destination="csD-yW-5Td" kind="unwind" unwindAction="unwindFromViewController:" id="1zI-3E-O1y"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backArrowWhite2.png" translatesAutoresizingMaskIntoConstraints="NO" id="7mV-cj-k0O">
-                                <rect key="frame" x="16" y="10" width="29" height="26"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WCDC.png" translatesAutoresizingMaskIntoConstraints="NO" id="7mV-cj-k0O">
+                                <rect key="frame" x="32" y="32" width="30" height="30"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -809,6 +813,7 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="WWDCimage" destination="7mV-cj-k0O" id="TRI-bD-ao6"/>
                         <outlet property="mapIcon" destination="fyS-aU-Au5" id="IwB-wW-0eh"/>
                     </connections>
                 </viewController>
@@ -845,9 +850,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="126"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backArrowWhite2.png" translatesAutoresizingMaskIntoConstraints="NO" id="60b-Ne-dvy">
-                                <rect key="frame" x="12" y="36" width="29" height="26"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dgk-hk-aa0">
                                 <rect key="frame" x="-7" y="-1" width="105" height="79"/>
                                 <state key="normal">
@@ -897,6 +899,9 @@
                                 <rect key="frame" x="0.0" y="68" width="320" height="10"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WCDC.png" translatesAutoresizingMaskIntoConstraints="NO" id="60b-Ne-dvy">
+                                <rect key="frame" x="32" y="32" width="30" height="30"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mugtrans.png" translatesAutoresizingMaskIntoConstraints="NO" id="CC8-S4-k8a">
                                 <rect key="frame" x="106" y="10" width="108" height="108"/>
                             </imageView>
@@ -918,6 +923,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="coffeeIcon" destination="CC8-S4-k8a" id="7Cc-E8-K1i"/>
+                        <outlet property="wwcdImage" destination="60b-Ne-dvy" id="iXc-C0-pvX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PGC-G5-haR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -934,7 +940,6 @@
         <image name="DiviAppIconpng.png" width="103" height="99"/>
         <image name="Octocat.png" width="800" height="665"/>
         <image name="WCDC.png" width="100" height="100"/>
-        <image name="backArrowWhite2.png" width="512" height="512"/>
         <image name="background.jpg" width="620" height="413"/>
         <image name="crown.png" width="100" height="100"/>
         <image name="ditrans.png" width="100" height="100"/>

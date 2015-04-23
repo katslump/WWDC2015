@@ -10,6 +10,8 @@ import UIKit
 
 class FourthViewController: UIViewController {
 
+   
+    
     @IBAction func diviButton(sender: AnyObject) {
            UIApplication.sharedApplication().openURL(NSURL(string: "http://invis.io/GZ2RC0G2B")!)
     }
@@ -26,32 +28,54 @@ class FourthViewController: UIViewController {
     }
     
     @IBOutlet var coffeeIcon: UIImageView!
-    
+    var frame: CGRect = CGRectMake(0, 0, 0, 0)
+ 
     
     var scrollView: UIScrollView!
     var timeline:   TimelineView!
     
-    var frame: CGRect = CGRectMake(0, 0, 0, 0)
+    @IBOutlet var wwcdImage: UIImageView!
+    let duration = 2.0
+    let delay = 1.0
+    let options = UIViewKeyframeAnimationOptions.CalculationModeLinear
+    
+    override func viewDidAppear(animated: Bool) {
+        self.view.addSubview(wwcdImage)
+        
+        // angles in iOS are measured as radians PI is 180 degrees so PI × 2 is 360 degrees
+        let fullRotation = CGFloat(M_PI * 2)
+        
+        UIView.animateKeyframesWithDuration(duration, delay: delay, options: options, animations: {
+            // each keyframe needs to be added here
+            // within each keyframe the relativeStartTime and relativeDuration need to be values between 0.0 and 1.0
+            
+            UIView.addKeyframeWithRelativeStartTime(0, relativeDuration: 1/3, animations: {
+                // start at 0.00s (5s × 0)
+                // duration 1.67s (5s × 1/3)
+                // end at   1.67s (0.00s + 1.67s)
+                self.wwcdImage.transform = CGAffineTransformMakeRotation(1/3 * fullRotation)
+                self.wwcdImage.alpha=1;
+            })
+            UIView.addKeyframeWithRelativeStartTime(1/3, relativeDuration: 1/3, animations: {
+                self.wwcdImage.transform = CGAffineTransformMakeRotation(2/3 * fullRotation)
+            })
+            UIView.addKeyframeWithRelativeStartTime(2/3, relativeDuration: 1/3, animations: {
+                self.wwcdImage.transform = CGAffineTransformMakeRotation(3/3 * fullRotation)
+            })
+            
+            }, completion: {finished in
+                // any code entered here will be applied
+                // once the animation has completed
+                
+                
+                
+        })
+
+    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
- 
-
-        // Do any additional setup after loading the view.
-        
-        /*
-        self.coffeeIcon.layer.cornerRadius = self.coffeeIcon.frame.size.width / 2;
-        self.coffeeIcon.clipsToBounds = true
-        
-        var newColor = UIColor.whiteColor().CGColor
-        
-        
-        self.coffeeIcon.layer.borderWidth = 3.0
-        self.coffeeIcon.layer.borderColor = newColor
-        self.coffeeIcon.layer.cornerRadius = 10.0
-
-        */
 
         // Do any additional setup after loading the view, typically from a nib.
         scrollView = UIScrollView(frame: view.bounds)
@@ -69,10 +93,10 @@ class FourthViewController: UIViewController {
        	
         timeline = TimelineView(bulletType: .Arrow, timeFrames: [
           
-            TimeFrame(text: "A social media app that uses image recgonition to detect logos of brands in images, tags and further tracks the brand, and sends the tweet to Twitter.", date: "Brand Detect (2015)", image: nil),
-            TimeFrame(text: "A simplified laundry alert app for shared spaces (dorms, apartments, etc.) soon to be integrated with a wireless sensor called Notion.",date: "DiviLert (2015)", image:UIImage(named: "BD2.jpg")),
-            TimeFrame(text: "An educational game for children about health & nutrition that tests the player's knowledge of the calorie amounts in food and physical activities.", date: "The Calorie Gallery (2013)", image: UIImage(named: "DiviAppIcon.jpg")),
-            TimeFrame(text: "A mobile game created to test the user's ability to pop balloons while dodging a listed color.", date: "Pop & Dodge. (2013)", image: UIImage(named: "CalorieGallery.png")),
+            TimeFrame(text: "A social media app that uses image recognition to detect the logos of brands in images, then tags and tracks the brand in social media posts. Available on GitHub.", date: "Brand Detect (2015)", image: nil),
+            TimeFrame(text: "A simplified laundry alert app mockup for shared spaces (dorms, apartments, etc.) soon to be integrated with a wireless sensor called Notion.",date: "DiviLert (2015)", image:UIImage(named: "BD2.jpg")),
+            TimeFrame(text: "An educational iPad game made for children to teach them about health & nutrition. The game tests the player's knowledge of the calorie amounts in foods and the amount burned through physical activities. Available on the App Store.", date: "The Calorie Gallery (2013)", image: UIImage(named: "DiviAppIcon.jpg")),
+            TimeFrame(text: "A mobile game created to test the user's ability to pop balloons while dodging a listed color. Available on the App Store.", date: "Pop & Dodge. (2013)", image: UIImage(named: "CalorieGallery.png")),
             TimeFrame(text: " ", date: " ", image: UIImage(named: "PopDodge.png")),
             
             
@@ -89,6 +113,7 @@ class FourthViewController: UIViewController {
         
         view.sendSubviewToBack(scrollView)
     }
+  
     
     @IBAction func bulletChanged(sender: UISegmentedControl) {
         timeline.bulletType = [BulletType.Circle, BulletType.Hexagon, BulletType.Diamond, BulletType.DiamondSlash, BulletType.Carrot, BulletType.Arrow][sender.selectedSegmentIndex]

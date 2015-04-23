@@ -48,10 +48,9 @@ class MenuViewController: UIViewController {
         
     }
   
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        self.transitioningDelegate = self.transitionManager
+    
+    
+    override func viewDidAppear(animated: Bool) {
         
         self.view.addSubview(WCDCimage)
         
@@ -83,6 +82,12 @@ class MenuViewController: UIViewController {
                 
                 
         })
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.transitioningDelegate = self.transitionManager
+
         
     }
     

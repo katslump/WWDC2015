@@ -10,8 +10,14 @@ import UIKit
 
 class HonorsViewController: UIViewController {
 
-    @IBAction func resumeButton(sender: AnyObject) {
+    @IBOutlet var WWDCimage: UIImageView!
+   
+    let duration = 2.0
+    let delay = 1.0
+    let options = UIViewKeyframeAnimationOptions.CalculationModeLinear
     
+    @IBAction func resumeButton(sender: AnyObject) {
+        
     UIApplication.sharedApplication().openURL(NSURL(string: "http://www.katslump.com/uploads/1/1/7/2/1172891/katslumpnewresumev3.pdf")!)
     
     }
@@ -20,23 +26,44 @@ class HonorsViewController: UIViewController {
     @IBAction func githubLink(sender: AnyObject) {
            UIApplication.sharedApplication().openURL(NSURL(string: "      https://github.com/katslump")!)
   
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        self.view.addSubview(WWDCimage)
+        
+        // angles in iOS are measured as radians PI is 180 degrees so PI × 2 is 360 degrees
+        let fullRotation = CGFloat(M_PI * 2)
+        
+        UIView.animateKeyframesWithDuration(duration, delay: delay, options: options, animations: {
+            // each keyframe needs to be added here
+            // within each keyframe the relativeStartTime and relativeDuration need to be values between 0.0 and 1.0
+            
+            UIView.addKeyframeWithRelativeStartTime(0, relativeDuration: 1/3, animations: {
+                // start at 0.00s (5s × 0)
+                // duration 1.67s (5s × 1/3)
+                // end at   1.67s (0.00s + 1.67s)
+                self.WWDCimage.transform = CGAffineTransformMakeRotation(1/3 * fullRotation)
+                self.WWDCimage.alpha=1;
+            })
+            UIView.addKeyframeWithRelativeStartTime(1/3, relativeDuration: 1/3, animations: {
+                self.WWDCimage.transform = CGAffineTransformMakeRotation(2/3 * fullRotation)
+            })
+            UIView.addKeyframeWithRelativeStartTime(2/3, relativeDuration: 1/3, animations: {
+                self.WWDCimage.transform = CGAffineTransformMakeRotation(3/3 * fullRotation)
+            })
+            
+            }, completion: {finished in
+                // any code entered here will be applied
+                // once the animation has completed
+                
+                
+                
+        })
         
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-/*
-        // Do any additional setup after loading the view.
-        self.giftIcon.layer.cornerRadius = self.giftIcon.frame.size.width / 2;
-        self.giftIcon.clipsToBounds = true
-        
-        var newColor = UIColor.whiteColor().CGColor
-        
-        
-        self.giftIcon.layer.borderWidth = 3.0
-        self.giftIcon.layer.borderColor = newColor
-        self.giftIcon.layer.cornerRadius = 10.0
-        
-        */
+
     }
 
     override func didReceiveMemoryWarning() {
