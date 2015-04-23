@@ -10,10 +10,36 @@ import UIKit
 
 class MenuViewController: UIViewController {
 
-  
+    // create instance of our custom transition manager
+    let transitionManager = TransitionManager()
+    
     let duration = 2.0
     let delay = 1.0
     let options = UIViewKeyframeAnimationOptions.CalculationModeLinear
+    
+    
+    @IBOutlet var coffeeButton: UIButton!
+    @IBOutlet var coffeeLabel: UILabel!
+    
+    @IBOutlet var gemButton: UIButton!
+    @IBOutlet var gemLabel: UILabel!
+    
+    @IBOutlet var mapButton: UIButton!
+    @IBOutlet var maplabel: UILabel!
+    
+    @IBOutlet var crownButton: UIButton!
+    @IBOutlet var crownLabel: UILabel!
+    
+    @IBOutlet var heartButton: UIButton!
+    @IBOutlet var heartLabel: UILabel!
+    
+    @IBOutlet var giftButton: UIButton!
+    @IBOutlet var giftLabel: UILabel!
+    
+    
+    
+    
+    
     
     @IBOutlet var WCDCimage: UIImageView!
     
@@ -22,11 +48,10 @@ class MenuViewController: UIViewController {
         
     }
   
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.transitioningDelegate = self.transitionManager
         
         self.view.addSubview(WCDCimage)
         

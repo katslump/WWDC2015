@@ -47,6 +47,12 @@
 		ACC1A8D21AE81FA0003B90BF /* mug.png in Resources */ = {isa = PBXBuildFile; fileRef = ACC1A8CE1AE81FA0003B90BF /* mug.png */; };
 		ACC1A8D41AE822CF003B90BF /* WCDC.png in Resources */ = {isa = PBXBuildFile; fileRef = ACC1A8D31AE822CF003B90BF /* WCDC.png */; };
 		ACC1A8D61AE828C8003B90BF /* grid.gif in Resources */ = {isa = PBXBuildFile; fileRef = ACC1A8D51AE828C8003B90BF /* grid.gif */; };
+		ACDF79D61AE8424F00D28D1D /* CalorieGallerypng.png in Resources */ = {isa = PBXBuildFile; fileRef = ACDF79D21AE8424F00D28D1D /* CalorieGallerypng.png */; };
+		ACDF79D71AE8424F00D28D1D /* poppng.png in Resources */ = {isa = PBXBuildFile; fileRef = ACDF79D31AE8424F00D28D1D /* poppng.png */; };
+		ACDF79D81AE8424F00D28D1D /* BD2PNG.png in Resources */ = {isa = PBXBuildFile; fileRef = ACDF79D41AE8424F00D28D1D /* BD2PNG.png */; };
+		ACDF79D91AE8424F00D28D1D /* DiviAppIconpng.png in Resources */ = {isa = PBXBuildFile; fileRef = ACDF79D51AE8424F00D28D1D /* DiviAppIconpng.png */; };
+		ACDF79DB1AE8802600D28D1D /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDF79DA1AE8802600D28D1D /* TransitionManager.swift */; };
+		ACDF79DD1AE89B2F00D28D1D /* mic.png in Resources */ = {isa = PBXBuildFile; fileRef = ACDF79DC1AE89B2F00D28D1D /* mic.png */; };
 		ACE9B6811AE70CDE0051C1CD /* square1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACE9B6801AE70CDE0051C1CD /* square1.jpg */; };
 		ACE9B6851AE715250051C1CD /* ditrans.png in Resources */ = {isa = PBXBuildFile; fileRef = ACE9B6821AE715250051C1CD /* ditrans.png */; };
 		ACE9B6861AE715250051C1CD /* globetrans.png in Resources */ = {isa = PBXBuildFile; fileRef = ACE9B6831AE715250051C1CD /* globetrans.png */; };
@@ -131,6 +137,12 @@
 		ACC1A8CE1AE81FA0003B90BF /* mug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mug.png; sourceTree = "<group>"; };
 		ACC1A8D31AE822CF003B90BF /* WCDC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WCDC.png; sourceTree = "<group>"; };
 		ACC1A8D51AE828C8003B90BF /* grid.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = grid.gif; sourceTree = "<group>"; };
+		ACDF79D21AE8424F00D28D1D /* CalorieGallerypng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CalorieGallerypng.png; sourceTree = "<group>"; };
+		ACDF79D31AE8424F00D28D1D /* poppng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poppng.png; sourceTree = "<group>"; };
+		ACDF79D41AE8424F00D28D1D /* BD2PNG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BD2PNG.png; sourceTree = "<group>"; };
+		ACDF79D51AE8424F00D28D1D /* DiviAppIconpng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DiviAppIconpng.png; sourceTree = "<group>"; };
+		ACDF79DA1AE8802600D28D1D /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransitionManager.swift; path = ../TransitionManager.swift; sourceTree = "<group>"; };
+		ACDF79DC1AE89B2F00D28D1D /* mic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mic.png; sourceTree = "<group>"; };
 		ACE9B6801AE70CDE0051C1CD /* square1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = square1.jpg; sourceTree = "<group>"; };
 		ACE9B6821AE715250051C1CD /* ditrans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ditrans.png; sourceTree = "<group>"; };
 		ACE9B6831AE715250051C1CD /* globetrans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = globetrans.png; sourceTree = "<group>"; };
@@ -227,6 +239,7 @@
 			children = (
 				F49BBFCF18E7DA63006E563B /* images */,
 				F49BBFA918E7D982006E563B /* ProfileAppDelegate.h */,
+				ACDF79DA1AE8802600D28D1D /* TransitionManager.swift */,
 				AC816B0F1AE4C22600224169 /* TimelineView.swift */,
 				AC816B101AE4C22600224169 /* ViewController.swift */,
 				F49BBFAA18E7D982006E563B /* ProfileAppDelegate.m */,
@@ -279,6 +292,7 @@
 		F49BBFCF18E7DA63006E563B /* images */ = {
 			isa = PBXGroup;
 			children = (
+				ACDF79DC1AE89B2F00D28D1D /* mic.png */,
 				ACE9B6921AE722290051C1CD /* Octocat.png */,
 				ACE9B6901AE71BA50051C1CD /* NCWIT.png */,
 				ACE9B6801AE70CDE0051C1CD /* square1.jpg */,
@@ -319,6 +333,10 @@
 				AC2954981AE2E10700BE2A66 /* facebok-icon.png */,
 				AC816B231AE5F9C700224169 /* DiviAppIcon.jpg */,
 				ACE9B6821AE715250051C1CD /* ditrans.png */,
+				ACDF79D21AE8424F00D28D1D /* CalorieGallerypng.png */,
+				ACDF79D31AE8424F00D28D1D /* poppng.png */,
+				ACDF79D41AE8424F00D28D1D /* BD2PNG.png */,
+				ACDF79D51AE8424F00D28D1D /* DiviAppIconpng.png */,
 				ACE9B6881AE719540051C1CD /* chance.png */,
 				ACE9B6831AE715250051C1CD /* globetrans.png */,
 				ACE9B6841AE715250051C1CD /* mugtrans.png */,
@@ -412,6 +430,7 @@
 				ACC1A8D61AE828C8003B90BF /* grid.gif in Resources */,
 				AC816B211AE5F99D00224169 /* CalorieGallery.png in Resources */,
 				ACC1A8D21AE81FA0003B90BF /* mug.png in Resources */,
+				ACDF79D61AE8424F00D28D1D /* CalorieGallerypng.png in Resources */,
 				AC816B371AE6BED900224169 /* backArrowWhite2.png in Resources */,
 				ACC1A8CA1AE7CDB0003B90BF /* map.png in Resources */,
 				ACC1A8C91AE7CDB0003B90BF /* heart.png in Resources */,
@@ -426,6 +445,8 @@
 				AC816B1A1AE5A53A00224169 /* square.png in Resources */,
 				AC816B1C1AE5A53A00224169 /* flywheel.png in Resources */,
 				ACE9B6861AE715250051C1CD /* globetrans.png in Resources */,
+				ACDF79D91AE8424F00D28D1D /* DiviAppIconpng.png in Resources */,
+				ACDF79DD1AE89B2F00D28D1D /* mic.png in Resources */,
 				ACF9784F1AE48C16008769F9 /* 1800227_10205715912039980_7327075649600560856_n (1).jpg in Resources */,
 				AC2954971AE2E0F700BE2A66 /* twitter-icon.png in Resources */,
 				ACF9784B1AE487FC008769F9 /* text.jpg in Resources */,
@@ -455,6 +476,8 @@
 				ACE9B6911AE71BA50051C1CD /* NCWIT.png in Resources */,
 				AC2954801AE2CC1D00BE2A66 /* KatSlumpPic.jpg in Resources */,
 				F49BBFAE18E7D982006E563B /* Main.storyboard in Resources */,
+				ACDF79D81AE8424F00D28D1D /* BD2PNG.png in Resources */,
+				ACDF79D71AE8424F00D28D1D /* poppng.png in Resources */,
 				AC2954841AE2CD4F00BE2A66 /* next15.png in Resources */,
 				ACC1A8C61AE7CDB0003B90BF /* coffee.png in Resources */,
 			);
@@ -478,6 +501,7 @@
 				AC2954911AE2D4FF00BE2A66 /* FourthViewController.swift in Sources */,
 				AC816B321AE5FF3900224169 /* HonorsViewController.swift in Sources */,
 				AC29548D1AE2D4DD00BE2A66 /* SecondViewController.swift in Sources */,
+				ACDF79DB1AE8802600D28D1D /* TransitionManager.swift in Sources */,
 				F49BBFAB18E7D982006E563B /* ProfileAppDelegate.m in Sources */,
 				AC816B121AE4C22600224169 /* ViewController.swift in Sources */,
 				AC816B1E1AE5F3EC00224169 /* MenuViewController.swift in Sources */,

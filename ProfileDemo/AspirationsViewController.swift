@@ -16,7 +16,7 @@ class AspirationsViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+        /*
         self.heartIcon.layer.cornerRadius = self.heartIcon.frame.size.width / 2;
         self.heartIcon.clipsToBounds = true
         
@@ -27,7 +27,7 @@ class AspirationsViewController: UIViewController {
         self.heartIcon.layer.borderColor = newColor
         self.heartIcon.layer.cornerRadius = 10.0
         
-        
+        */
     }
 
     override func didReceiveMemoryWarning() {

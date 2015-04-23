@@ -17,6 +17,9 @@
 @implementation ProfileViewController
 
 @synthesize WWDCimage;
+- (IBAction)profileButton:(id)sender {
+       [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://katslump.com/"]];
+}
 
 - (IBAction)twitterButton:(id)sender {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://twitter.com/katslump"]];
@@ -59,17 +62,21 @@
     self.profileImageView.layer.cornerRadius = 10.0f;
 
     
-    [self.view addSubview:WWDCimage];
-    
-    #define SPIN_CLOCK_WISE 1
-    #define SPIN_COUNTERCLOCK_WISE -1
-    
 
-    [self spinLayer:WWDCimage.layer duration:2 direction:SPIN_CLOCK_WISE delay:1];
  
     
 
     
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [self.view addSubview:WWDCimage];
+    
+#define SPIN_CLOCK_WISE 1
+#define SPIN_COUNTERCLOCK_WISE -1
+    
+    
+    [self spinLayer:WWDCimage.layer duration:2 direction:SPIN_CLOCK_WISE delay:1];
 }
 
 

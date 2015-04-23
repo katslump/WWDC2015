@@ -18,7 +18,7 @@ class ViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
-        
+        /*
         self.crownImage.layer.cornerRadius = self.crownImage.frame.size.width / 2
         self.crownImage.clipsToBounds = true
         
@@ -29,9 +29,10 @@ class ViewController: UIViewController {
         
         self.crownImage.layer.cornerRadius = 10.0
         // Do any additional setup after loading the view.
-        
-        self.view.addSubview(crownImage)
 
+        self.view.addSubview(crownImage)
+*/
+        
 		scrollView = UIScrollView(frame: view.bounds)
 		scrollView.setTranslatesAutoresizingMaskIntoConstraints(false)
 		view.addSubview(scrollView)
@@ -40,9 +41,9 @@ class ViewController: UIViewController {
 		
 		view.addConstraints([
 			NSLayoutConstraint(item: scrollView, attribute: .Left, relatedBy: .Equal, toItem: view, attribute: .Left, multiplier: 1.0, constant: 0),
-			NSLayoutConstraint(item: scrollView, attribute: .Top, relatedBy: .Equal, toItem: view, attribute: .Top, multiplier: 1.0, constant: 29),
+			NSLayoutConstraint(item: scrollView, attribute: .Top, relatedBy: .Equal, toItem: view, attribute: .Top, multiplier: 1.0, constant: 5),
 			NSLayoutConstraint(item: scrollView, attribute: .Right, relatedBy: .Equal, toItem: view, attribute: .Right, multiplier: 1.0, constant: -15),
-			NSLayoutConstraint(item: scrollView, attribute: .Bottom, relatedBy: .Equal, toItem: view, attribute: .Bottom, multiplier: 1.0, constant: -20)
+			NSLayoutConstraint(item: scrollView, attribute: .Bottom, relatedBy: .Equal, toItem: view, attribute: .Bottom, multiplier: 1.0, constant: 0)
 			])
 		
 		timeline = TimelineView(bulletType: .Carrot, timeFrames: [

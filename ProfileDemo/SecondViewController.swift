@@ -21,7 +21,7 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+        /*
         self.iconHolder.layer.cornerRadius = self.iconHolder.frame.size.width / 2;
         self.iconHolder.clipsToBounds = true
       
@@ -31,7 +31,8 @@ class SecondViewController: UIViewController {
         self.iconHolder.layer.borderWidth = 3.0
         self.iconHolder.layer.borderColor = newColor
         self.iconHolder.layer.cornerRadius = 10.0
-
+*/
+        
         // Do any additional setup after loading the view, typically from a nib.
         scrollView = UIScrollView(frame: view.bounds)
         scrollView.setTranslatesAutoresizingMaskIntoConstraints(false)
@@ -41,9 +42,9 @@ class SecondViewController: UIViewController {
         
         view.addConstraints([
             NSLayoutConstraint(item: scrollView, attribute: .Left, relatedBy: .Equal, toItem: view, attribute: .Left, multiplier: 1.0, constant: 0),
-            NSLayoutConstraint(item: scrollView, attribute: .Top, relatedBy: .Equal, toItem: view, attribute: .Top, multiplier: 1.0, constant: 30),
+            NSLayoutConstraint(item: scrollView, attribute: .Top, relatedBy: .Equal, toItem: view, attribute: .Top, multiplier: 1.0, constant: 5),
             NSLayoutConstraint(item: scrollView, attribute: .Right, relatedBy: .Equal, toItem: view, attribute: .Right, multiplier: 1.0, constant: -15),
-            NSLayoutConstraint(item: scrollView, attribute: .Bottom, relatedBy: .Equal, toItem: view, attribute: .Bottom, multiplier: 1.0, constant: -20)
+            NSLayoutConstraint(item: scrollView, attribute: .Bottom, relatedBy: .Equal, toItem: view, attribute: .Bottom, multiplier: 1.0, constant: 0)
             ])
         
        	

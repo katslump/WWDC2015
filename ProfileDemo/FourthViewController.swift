@@ -10,7 +10,21 @@ import UIKit
 
 class FourthViewController: UIViewController {
 
- 
+    @IBAction func diviButton(sender: AnyObject) {
+           UIApplication.sharedApplication().openURL(NSURL(string: "http://invis.io/GZ2RC0G2B")!)
+    }
+    @IBAction func brandButton(sender: AnyObject) {
+           UIApplication.sharedApplication().openURL(NSURL(string: "https://github.com/katslump/iOSbrandDetect")!)
+    }
+   
+    @IBAction func calorieButton(sender: AnyObject) {
+           UIApplication.sharedApplication().openURL(NSURL(string: "https://itunes.apple.com/us/app/the-calorie-gallery/id627204847?mt=8")!)
+    }
+    
+    @IBAction func popButton(sender: AnyObject) {
+           UIApplication.sharedApplication().openURL(NSURL(string: "https://itunes.apple.com/us/app/pop-dodge./id679965280?mt=8")!)
+    }
+    
     @IBOutlet var coffeeIcon: UIImageView!
     
     
@@ -26,7 +40,7 @@ class FourthViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        
+        /*
         self.coffeeIcon.layer.cornerRadius = self.coffeeIcon.frame.size.width / 2;
         self.coffeeIcon.clipsToBounds = true
         
@@ -36,6 +50,9 @@ class FourthViewController: UIViewController {
         self.coffeeIcon.layer.borderWidth = 3.0
         self.coffeeIcon.layer.borderColor = newColor
         self.coffeeIcon.layer.cornerRadius = 10.0
+
+        */
+
         // Do any additional setup after loading the view, typically from a nib.
         scrollView = UIScrollView(frame: view.bounds)
         scrollView.setTranslatesAutoresizingMaskIntoConstraints(false)
@@ -44,7 +61,7 @@ class FourthViewController: UIViewController {
         
         view.addConstraints([
             NSLayoutConstraint(item: scrollView, attribute: .Left, relatedBy: .Equal, toItem: view, attribute: .Left, multiplier: 1.0, constant: 0),
-            NSLayoutConstraint(item: scrollView, attribute: .Top, relatedBy: .Equal, toItem: view, attribute: .Top, multiplier: 1.0, constant: 35),
+            NSLayoutConstraint(item: scrollView, attribute: .Top, relatedBy: .Equal, toItem: view, attribute: .Top, multiplier: 1.0, constant: 5),
             NSLayoutConstraint(item: scrollView, attribute: .Right, relatedBy: .Equal, toItem: view, attribute: .Right, multiplier: 1.0, constant: -15),
             NSLayoutConstraint(item: scrollView, attribute: .Bottom, relatedBy: .Equal, toItem: view, attribute: .Bottom, multiplier: 1.0, constant: 0)
             ])
