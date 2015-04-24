@@ -11,12 +11,16 @@ import UIKit
 class AspirationsViewController: UIViewController {
     
     @IBOutlet var heartIcon: UIImageView!
-    
+    //declaration of heart icon
     @IBOutlet var WWDCimage: UIImageView!
+    //declaration of WWDC icon
 
     let duration = 2.0
+    //2 seconds long
     let delay = 1.0
+    //1 second delay
     let options = UIViewKeyframeAnimationOptions.CalculationModeLinear
+    
     
     override func viewDidAppear(animated: Bool) {
         self.view.addSubview(WWDCimage)
@@ -45,9 +49,7 @@ class AspirationsViewController: UIViewController {
             }, completion: {finished in
                 // any code entered here will be applied
                 // once the animation has completed
-                
-                
-                
+         
         })
         
     }
@@ -56,7 +58,6 @@ class AspirationsViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-  
     }
 
     override func didReceiveMemoryWarning() {
@@ -74,7 +75,6 @@ class AspirationsViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
-  
+
 
 }

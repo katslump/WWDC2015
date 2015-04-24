@@ -20,7 +20,6 @@
 		AC29549D1AE2E10700BE2A66 /* linkedin-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AC29549A1AE2E10700BE2A66 /* linkedin-icon.png */; };
 		AC816B111AE4C22600224169 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC816B0F1AE4C22600224169 /* TimelineView.swift */; };
 		AC816B121AE4C22600224169 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC816B101AE4C22600224169 /* ViewController.swift */; };
-		AC816B191AE5A53A00224169 /* NCWITlogo_square.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC816B151AE5A53A00224169 /* NCWITlogo_square.jpg */; };
 		AC816B1A1AE5A53A00224169 /* square.png in Resources */ = {isa = PBXBuildFile; fileRef = AC816B161AE5A53A00224169 /* square.png */; };
 		AC816B1B1AE5A53A00224169 /* interface.png in Resources */ = {isa = PBXBuildFile; fileRef = AC816B171AE5A53A00224169 /* interface.png */; };
 		AC816B1C1AE5A53A00224169 /* flywheel.png in Resources */ = {isa = PBXBuildFile; fileRef = AC816B181AE5A53A00224169 /* flywheel.png */; };
@@ -46,7 +45,6 @@
 		ACC1A8D11AE81FA0003B90BF /* gift.png in Resources */ = {isa = PBXBuildFile; fileRef = ACC1A8CD1AE81FA0003B90BF /* gift.png */; };
 		ACC1A8D21AE81FA0003B90BF /* mug.png in Resources */ = {isa = PBXBuildFile; fileRef = ACC1A8CE1AE81FA0003B90BF /* mug.png */; };
 		ACC1A8D41AE822CF003B90BF /* WCDC.png in Resources */ = {isa = PBXBuildFile; fileRef = ACC1A8D31AE822CF003B90BF /* WCDC.png */; };
-		ACC1A8D61AE828C8003B90BF /* grid.gif in Resources */ = {isa = PBXBuildFile; fileRef = ACC1A8D51AE828C8003B90BF /* grid.gif */; };
 		ACDF79D61AE8424F00D28D1D /* CalorieGallerypng.png in Resources */ = {isa = PBXBuildFile; fileRef = ACDF79D21AE8424F00D28D1D /* CalorieGallerypng.png */; };
 		ACDF79D71AE8424F00D28D1D /* poppng.png in Resources */ = {isa = PBXBuildFile; fileRef = ACDF79D31AE8424F00D28D1D /* poppng.png */; };
 		ACDF79D81AE8424F00D28D1D /* BD2PNG.png in Resources */ = {isa = PBXBuildFile; fileRef = ACDF79D41AE8424F00D28D1D /* BD2PNG.png */; };
@@ -64,7 +62,6 @@
 		ACE9B6911AE71BA50051C1CD /* NCWIT.png in Resources */ = {isa = PBXBuildFile; fileRef = ACE9B6901AE71BA50051C1CD /* NCWIT.png */; };
 		ACE9B6931AE722290051C1CD /* Octocat.png in Resources */ = {isa = PBXBuildFile; fileRef = ACE9B6921AE722290051C1CD /* Octocat.png */; };
 		ACE9B6951AE7237B0051C1CD /* gitIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = ACE9B6941AE7237B0051C1CD /* gitIcon.png */; };
-		ACF9784B1AE487FC008769F9 /* text.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACF978491AE487FC008769F9 /* text.jpg */; };
 		ACF9784F1AE48C16008769F9 /* 1800227_10205715912039980_7327075649600560856_n (1).jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACF9784E1AE48C16008769F9 /* 1800227_10205715912039980_7327075649600560856_n (1).jpg */; };
 		ACF978511AE4B1DE008769F9 /* wwdc_2015_roundup.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACF978501AE4B1DE008769F9 /* wwdc_2015_roundup.jpg */; };
 		ACF978531AE4B292008769F9 /* OpenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF978521AE4B292008769F9 /* OpenViewController.swift */; };
@@ -82,7 +79,6 @@
 		F49BBFBC18E7D982006E563B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49BBF9E18E7D982006E563B /* UIKit.framework */; };
 		F49BBFC418E7D982006E563B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F49BBFC218E7D982006E563B /* InfoPlist.strings */; };
 		F49BBFC618E7D982006E563B /* ProfileDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F49BBFC518E7D982006E563B /* ProfileDemoTests.m */; };
-		F49BBFD118E7DA74006E563B /* profile-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F49BBFD018E7DA74006E563B /* profile-bg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,7 +106,6 @@
 		AC29549A1AE2E10700BE2A66 /* linkedin-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "linkedin-icon.png"; sourceTree = "<group>"; };
 		AC816B0F1AE4C22600224169 /* TimelineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
 		AC816B101AE4C22600224169 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AC816B151AE5A53A00224169 /* NCWITlogo_square.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NCWITlogo_square.jpg; sourceTree = "<group>"; };
 		AC816B161AE5A53A00224169 /* square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square.png; sourceTree = "<group>"; };
 		AC816B171AE5A53A00224169 /* interface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = interface.png; sourceTree = "<group>"; };
 		AC816B181AE5A53A00224169 /* flywheel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flywheel.png; sourceTree = "<group>"; };
@@ -136,7 +131,6 @@
 		ACC1A8CD1AE81FA0003B90BF /* gift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gift.png; sourceTree = "<group>"; };
 		ACC1A8CE1AE81FA0003B90BF /* mug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mug.png; sourceTree = "<group>"; };
 		ACC1A8D31AE822CF003B90BF /* WCDC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WCDC.png; sourceTree = "<group>"; };
-		ACC1A8D51AE828C8003B90BF /* grid.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = grid.gif; sourceTree = "<group>"; };
 		ACDF79D21AE8424F00D28D1D /* CalorieGallerypng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CalorieGallerypng.png; sourceTree = "<group>"; };
 		ACDF79D31AE8424F00D28D1D /* poppng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poppng.png; sourceTree = "<group>"; };
 		ACDF79D41AE8424F00D28D1D /* BD2PNG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BD2PNG.png; sourceTree = "<group>"; };
@@ -154,7 +148,6 @@
 		ACE9B6901AE71BA50051C1CD /* NCWIT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NCWIT.png; sourceTree = "<group>"; };
 		ACE9B6921AE722290051C1CD /* Octocat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Octocat.png; sourceTree = "<group>"; };
 		ACE9B6941AE7237B0051C1CD /* gitIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gitIcon.png; sourceTree = "<group>"; };
-		ACF978491AE487FC008769F9 /* text.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = text.jpg; sourceTree = "<group>"; };
 		ACF9784E1AE48C16008769F9 /* 1800227_10205715912039980_7327075649600560856_n (1).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1800227_10205715912039980_7327075649600560856_n (1).jpg"; sourceTree = "<group>"; };
 		ACF978501AE4B1DE008769F9 /* wwdc_2015_roundup.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wwdc_2015_roundup.jpg; sourceTree = "<group>"; };
 		ACF978521AE4B292008769F9 /* OpenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenViewController.swift; sourceTree = "<group>"; };
@@ -177,7 +170,6 @@
 		F49BBFC118E7D982006E563B /* ProfileDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ProfileDemoTests-Info.plist"; sourceTree = "<group>"; };
 		F49BBFC318E7D982006E563B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F49BBFC518E7D982006E563B /* ProfileDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileDemoTests.m; sourceTree = "<group>"; };
-		F49BBFD018E7DA74006E563B /* profile-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "profile-bg.png"; path = "images/profile-bg.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -302,8 +294,6 @@
 				ACE9B6941AE7237B0051C1CD /* gitIcon.png */,
 				ACF978501AE4B1DE008769F9 /* wwdc_2015_roundup.jpg */,
 				AC2954811AE2CCBE00BE2A66 /* background.jpg */,
-				ACC1A8D51AE828C8003B90BF /* grid.gif */,
-				AC816B151AE5A53A00224169 /* NCWITlogo_square.jpg */,
 				AC816B161AE5A53A00224169 /* square.png */,
 				ACC1A8C11AE7CDB0003B90BF /* coffee.png */,
 				ACC1A8C21AE7CDB0003B90BF /* crown.png */,
@@ -321,7 +311,6 @@
 				AC816B201AE5F99D00224169 /* PopDodge.png */,
 				AC816B181AE5A53A00224169 /* flywheel.png */,
 				AC2954961AE2E0F700BE2A66 /* twitter-icon.png */,
-				ACF978491AE487FC008769F9 /* text.jpg */,
 				AC816B2D1AE5FD5C00224169 /* ITCup.jpg */,
 				ACE9B68A1AE719FD0051C1CD /* WomenTech.png */,
 				ACE9B68B1AE719FD0051C1CD /* CMO.png */,
@@ -343,7 +332,6 @@
 				AC2954991AE2E10700BE2A66 /* instagram.png */,
 				AC29549A1AE2E10700BE2A66 /* linkedin-icon.png */,
 				AC2954851AE2CFFD00BE2A66 /* dots.png */,
-				F49BBFD018E7DA74006E563B /* profile-bg.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -427,7 +415,6 @@
 			files = (
 				ACC1A8CF1AE81FA0003B90BF /* crown.png in Resources */,
 				ACE9B68D1AE719FD0051C1CD /* WomenTech.png in Resources */,
-				ACC1A8D61AE828C8003B90BF /* grid.gif in Resources */,
 				AC816B211AE5F99D00224169 /* CalorieGallery.png in Resources */,
 				ACC1A8D21AE81FA0003B90BF /* mug.png in Resources */,
 				ACDF79D61AE8424F00D28D1D /* CalorieGallerypng.png in Resources */,
@@ -439,7 +426,6 @@
 				AC816B351AE6BE6500224169 /* backArrowWhite.png in Resources */,
 				ACE9B6891AE719540051C1CD /* chance.png in Resources */,
 				AC2954861AE2CFFD00BE2A66 /* dots.png in Resources */,
-				F49BBFD118E7DA74006E563B /* profile-bg.png in Resources */,
 				ACE9B6851AE715250051C1CD /* ditrans.png in Resources */,
 				ACC1A8C01AE7CD9C003B90BF /* ruby.png in Resources */,
 				AC816B1A1AE5A53A00224169 /* square.png in Resources */,
@@ -449,7 +435,6 @@
 				ACDF79DD1AE89B2F00D28D1D /* mic.png in Resources */,
 				ACF9784F1AE48C16008769F9 /* 1800227_10205715912039980_7327075649600560856_n (1).jpg in Resources */,
 				AC2954971AE2E0F700BE2A66 /* twitter-icon.png in Resources */,
-				ACF9784B1AE487FC008769F9 /* text.jpg in Resources */,
 				ACC1A8D11AE81FA0003B90BF /* gift.png in Resources */,
 				AC816B2A1AE5FA5700224169 /* BD2.jpg in Resources */,
 				AC29549C1AE2E10700BE2A66 /* instagram.png in Resources */,
@@ -458,7 +443,6 @@
 				ACC1A8D01AE81FA0003B90BF /* heart.png in Resources */,
 				ACE9B6951AE7237B0051C1CD /* gitIcon.png in Resources */,
 				ACE9B6871AE715250051C1CD /* mugtrans.png in Resources */,
-				AC816B191AE5A53A00224169 /* NCWITlogo_square.jpg in Resources */,
 				ACE9B68F1AE719FD0051C1CD /* jack.png in Resources */,
 				F49BBFB318E7D982006E563B /* Images.xcassets in Resources */,
 				AC816B241AE5F9C700224169 /* DiviAppIcon.jpg in Resources */,

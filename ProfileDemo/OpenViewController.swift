@@ -11,8 +11,11 @@ import UIKit
 class OpenViewController: UIViewController {
     
     @IBOutlet var WWDCimage: UIImageView!
+    //WWDC image declaration
     let duration = 2.0
+    //2 second duration
     let delay = 1.0
+    //1 second delay
     let options = UIViewKeyframeAnimationOptions.CalculationModeLinear
    
     @IBOutlet var welcomeLabel: UILabel!
@@ -46,14 +49,11 @@ class OpenViewController: UIViewController {
             }, completion: {finished in
                 // any code entered here will be applied
                 // once the animation has completed
-               
                 
                 self.performSegueWithIdentifier("moveOn", sender: nil)
                 
         })
-        
 
-        
         // Do any additional setup after loading the view.
     }
 

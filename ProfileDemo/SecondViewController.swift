@@ -14,13 +14,18 @@ class SecondViewController: UIViewController {
   
     
     var scrollView: UIScrollView!
+    //creates scrollview
     var timeline:   TimelineView!
+    //creates timelineview
     let screenSize:CGRect = UIScreen.mainScreen().bounds
     
     
     @IBOutlet var WWDCimage: UIImageView!
+    //WWDC image declaration
     let duration = 2.0
+    //2 seconds long
     let delay = 1.0
+    //1 second delay
     let options = UIViewKeyframeAnimationOptions.CalculationModeLinear
     
     override func viewDidAppear(animated: Bool) {
@@ -50,8 +55,7 @@ class SecondViewController: UIViewController {
             }, completion: {finished in
                 // any code entered here will be applied
                 // once the animation has completed
-                
-                
+
                 
         })
         
@@ -96,13 +100,8 @@ class SecondViewController: UIViewController {
         
         view.sendSubviewToBack(scrollView)
     }
-    
-    @IBAction func bulletChanged(sender: UISegmentedControl) {
-        timeline.bulletType = [BulletType.Circle, BulletType.Hexagon, BulletType.Diamond, BulletType.DiamondSlash, BulletType.Carrot, BulletType.Arrow][sender.selectedSegmentIndex]
-    }
-    
-   
-    
+
+
     
 }
 

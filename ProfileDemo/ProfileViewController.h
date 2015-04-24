@@ -1,10 +1,9 @@
 //
-//  ProfileViewController.h
+//  ProfileViewController.swift
 //  ProfileDemo
 //
-//  Created by Simon on 30/3/14.
-//  Copyright (c) 2014 Appcoda. All rights reserved.
-//
+//  Created by Kat Slump on 4/18/15.
+//  Copyright (c) 2015 Appcoda. All rights reserved.
 
 #import <UIKit/UIKit.h>
 

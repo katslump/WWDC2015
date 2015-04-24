@@ -1,9 +1,9 @@
 //
-//  ProfileViewController.m
+//  ProfileViewController.swift
 //  ProfileDemo
 //
-//  Created by Simon on 30/3/14.
-//  Copyright (c) 2014 Appcoda. All rights reserved.
+//  Created by Kat Slump on 4/18/15.
+//  Copyright (c) 2015 Appcoda. All rights reserved.
 //
 
 #import "ProfileViewController.h"
@@ -19,25 +19,30 @@
 @synthesize WWDCimage;
 - (IBAction)profileButton:(id)sender {
        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://katslump.com/"]];
+      //send user to KatSlump.com
 }
 
 - (IBAction)twitterButton:(id)sender {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://twitter.com/katslump"]];
+      //send user to Twitter accont
 }
-
 
 - (IBAction)facebookButton:(id)sender {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.facebook.com/kat.slump"]];
+      //send user to Facebook account
 }
 
 - (IBAction)instagramButton:(id)sender {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://instagram.com/katslump"]];
+      //send user to Instagram account
 }
 - (IBAction)linkedinButton:(id)sender {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.linkedin.com/pub/katherine-slump/79/327/459"]];
+    //send user to LinkedIn account
 }
 - (IBAction)gitHubButton:(id)sender {
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://github.com/katslump"]];
+    //  //send user to GitHub account
     
 }
 
@@ -60,13 +65,7 @@
     self.profileImageView.layer.borderColor = [UIColor whiteColor].CGColor;
     
     self.profileImageView.layer.cornerRadius = 10.0f;
-
-    
-
  
-    
-
-    
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -78,7 +77,6 @@
     
     [self spinLayer:WWDCimage.layer duration:2 direction:SPIN_CLOCK_WISE delay:1];
 }
-
 
 
 - (void)spinLayer:(CALayer *)inLayer duration:(CFTimeInterval)inDuration

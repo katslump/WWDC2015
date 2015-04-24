@@ -1,28 +1,35 @@
-//
 //  ViewController.swift
-//  Timeline
+//  KatSlump
 //
-//  Created by Evan Dekhayser on 7/26/14.
-//  Copyright (c) 2014 Evan Dekhayser. All rights reserved.
-//
+//  Created by Kat Slump on 4/20/15.
+//  Copyright (c) 2015 Appcoda. All rights reserved.
 
 import UIKit
 
 class ViewController: UIViewController {
 	
     @IBOutlet var crownImage: UIImageView!
+    //crown image icon declaration
     
 	var scrollView: UIScrollView!
+    //create scrollview
     var timeline:   TimelineView!
+    //create timelineview
 	
    
     @IBOutlet var WWDCimage: UIImageView!
+    //WWDC icon declaration
+    
     let duration = 2.0
+    //2 seconds long
     let delay = 1.0
+    //1 second delay
     let options = UIViewKeyframeAnimationOptions.CalculationModeLinear
     
     override func viewDidAppear(animated: Bool) {
+        
         self.view.addSubview(WWDCimage)
+        //add image to subview
         
         // angles in iOS are measured as radians PI is 180 degrees so PI × 2 is 360 degrees
         let fullRotation = CGFloat(M_PI * 2)
@@ -48,14 +55,9 @@ class ViewController: UIViewController {
             }, completion: {finished in
                 // any code entered here will be applied
                 // once the animation has completed
-                
-                
-                
         })
         
     }
-
-    
     
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -91,13 +93,7 @@ class ViewController: UIViewController {
 			])
 
         view.sendSubviewToBack(scrollView)
-	}
-	
-    @IBAction func bulletChanged(sender: UISegmentedControl) {
-        timeline.bulletType = [BulletType.Circle, BulletType.Hexagon, BulletType.Diamond, BulletType.DiamondSlash, BulletType.Carrot, BulletType.Arrow][sender.selectedSegmentIndex]
-    }
-
-	
+	}	
 	
 }
 

@@ -14,23 +14,27 @@ class FourthViewController: UIViewController {
     
     @IBAction func diviButton(sender: AnyObject) {
            UIApplication.sharedApplication().openURL(NSURL(string: "http://invis.io/GZ2RC0G2B")!)
+        //send user to InvisionApp
     }
     @IBAction func brandButton(sender: AnyObject) {
            UIApplication.sharedApplication().openURL(NSURL(string: "https://github.com/katslump/iOSbrandDetect")!)
+        //send user to GitHub
     }
    
     @IBAction func calorieButton(sender: AnyObject) {
            UIApplication.sharedApplication().openURL(NSURL(string: "https://itunes.apple.com/us/app/the-calorie-gallery/id627204847?mt=8")!)
+        //send user to iTunes App Store
     }
     
     @IBAction func popButton(sender: AnyObject) {
            UIApplication.sharedApplication().openURL(NSURL(string: "https://itunes.apple.com/us/app/pop-dodge./id679965280?mt=8")!)
+        //send user to iTunes App Store
     }
     
     @IBOutlet var coffeeIcon: UIImageView!
     var frame: CGRect = CGRectMake(0, 0, 0, 0)
  
-    
+
     var scrollView: UIScrollView!
     var timeline:   TimelineView!
     
@@ -113,13 +117,7 @@ class FourthViewController: UIViewController {
         
         view.sendSubviewToBack(scrollView)
     }
-  
-    
-    @IBAction func bulletChanged(sender: UISegmentedControl) {
-        timeline.bulletType = [BulletType.Circle, BulletType.Hexagon, BulletType.Diamond, BulletType.DiamondSlash, BulletType.Carrot, BulletType.Arrow][sender.selectedSegmentIndex]
-    }
-    
-  
+
     
     
 }

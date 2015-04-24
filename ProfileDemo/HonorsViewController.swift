@@ -11,25 +11,31 @@ import UIKit
 class HonorsViewController: UIViewController {
 
     @IBOutlet var WWDCimage: UIImageView!
+    //WWDC image declaration
+    
+    @IBOutlet var giftIcon: UIImageView!
+    //gift icon declaration
    
     let duration = 2.0
+    //2 seconds long
     let delay = 1.0
+    //1 second delay
     let options = UIViewKeyframeAnimationOptions.CalculationModeLinear
     
     @IBAction func resumeButton(sender: AnyObject) {
-        
-    UIApplication.sharedApplication().openURL(NSURL(string: "http://www.katslump.com/uploads/1/1/7/2/1172891/katslumpnewresumev3.pdf")!)
-    
+        UIApplication.sharedApplication().openURL(NSURL(string: "http://www.katslump.com/uploads/1/1/7/2/1172891/katslumpnewresumev3.pdf")!)
+        //sends user to url when 'Resume PDF' selected
     }
-    @IBOutlet var giftIcon: UIImageView!
     
     @IBAction func githubLink(sender: AnyObject) {
            UIApplication.sharedApplication().openURL(NSURL(string: "      https://github.com/katslump")!)
-  
+        //sends user to url when GitHub icon selected
     }
+    
     
     override func viewDidAppear(animated: Bool) {
         self.view.addSubview(WWDCimage)
+        //adds WWDC to subview
         
         // angles in iOS are measured as radians PI is 180 degrees so PI × 2 is 360 degrees
         let fullRotation = CGFloat(M_PI * 2)
@@ -55,23 +61,21 @@ class HonorsViewController: UIViewController {
             }, completion: {finished in
                 // any code entered here will be applied
                 // once the animation has completed
-                
-                
-                
         })
         
     }
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 

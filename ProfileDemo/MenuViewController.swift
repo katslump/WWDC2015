@@ -14,45 +14,48 @@ class MenuViewController: UIViewController {
     let transitionManager = TransitionManager()
     
     let duration = 2.0
+    //2 seconds long
     let delay = 1.0
+    //1 second delay
     let options = UIViewKeyframeAnimationOptions.CalculationModeLinear
     
     
     @IBOutlet var coffeeButton: UIButton!
     @IBOutlet var coffeeLabel: UILabel!
+      //coffee button + label declaration
     
     @IBOutlet var gemButton: UIButton!
     @IBOutlet var gemLabel: UILabel!
+      //gem button + label declaration
     
     @IBOutlet var mapButton: UIButton!
     @IBOutlet var maplabel: UILabel!
+      //map button + label declaration
     
     @IBOutlet var crownButton: UIButton!
     @IBOutlet var crownLabel: UILabel!
+      //crown button + label declaration
     
     @IBOutlet var heartButton: UIButton!
     @IBOutlet var heartLabel: UILabel!
+      //heart button + label declaration
     
     @IBOutlet var giftButton: UIButton!
     @IBOutlet var giftLabel: UILabel!
-    
-    
-    
-    
-    
+      //gift button + label declaration
     
     @IBOutlet var WCDCimage: UIImageView!
+    //WWDC image declaration
     
     @IBAction func websiteLink(sender: AnyObject) {
          UIApplication.sharedApplication().openURL(NSURL(string: "http://www.katslump.com/")!)
-        
+        //sends user to website url when clicked
     }
-  
-    
     
     override func viewDidAppear(animated: Bool) {
         
         self.view.addSubview(WCDCimage)
+        //adds WWDCimage to veiw
         
         // angles in iOS are measured as radians PI is 180 degrees so PI × 2 is 360 degrees
         let fullRotation = CGFloat(M_PI * 2)
@@ -78,22 +81,19 @@ class MenuViewController: UIViewController {
             }, completion: {finished in
                 // any code entered here will be applied
                 // once the animation has completed
-                
-                
-                
+    
         })
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.transitioningDelegate = self.transitionManager
-
-        
+       
     }
     
 
     @IBAction func unwindFromViewController(segue:UIStoryboardSegue) {
-    
+    //unwind function-- NEEDED
     }
 
     override func didReceiveMemoryWarning() {

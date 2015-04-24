@@ -49,14 +49,12 @@ class ThirdViewController: UIViewController {
             }, completion: {finished in
                 // any code entered here will be applied
                 // once the animation has completed
-                
-                
+
                 
         })
         
     }
 
-    
    
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -97,11 +95,6 @@ class ThirdViewController: UIViewController {
         
         view.sendSubviewToBack(scrollView)
     }
-    
-    @IBAction func bulletChanged(sender: UISegmentedControl) {
-        timeline.bulletType = [BulletType.Circle, BulletType.Hexagon, BulletType.Diamond, BulletType.DiamondSlash, BulletType.Carrot, BulletType.Arrow][sender.selectedSegmentIndex]
-    }
-    
 
     
     
